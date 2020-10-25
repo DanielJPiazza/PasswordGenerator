@@ -3,31 +3,42 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
 
     <title>PassGen</title>
     <meta name="description" content="Password generator">
     <meta name="author" content="https://github.com/DanielJPiazza">
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
   </head>
 
   <body>
     <div class="container">
-      <p>Password Length: <span id="sliderVal"></span></p>
-      <p><input type="range" min="8" max="64" value="14" class="slider" id="passwordLengthSlider"></p>
+      <div class="row"></div>
+        <div class="col-md-6 mx-auto">
+          <p>Password Length: <span id="sliderVal"></span></p>
+          <p><input type="range" min="8" max="64" value="14" class="slider" id="passwordLengthSlider"></p>
 
-      <label><input type="checkbox" id="lowercaseFlag" name="lowercaseFlag">Lowercase</label>
-      <label><input type="checkbox" id="uppercaseFlag" name="uppercaseFlag">Uppercase</label>
-      <label><input type="checkbox" id="numbersFlag" name="numbersFlag">Numbers</label>
-      <label><input type="checkbox" id="symbolsFlag" name="symbolsFlag">Symbols</label>
+          <div>
+            <label><input type="checkbox" id="lowercaseFlag" name="lowercaseFlag">&nbsp;Lowercase</label>
+            <label><input type="checkbox" id="uppercaseFlag" name="uppercaseFlag">&nbsp;Uppercase</label>
+          </div>
+          <div>
+            <label><input type="checkbox" id="numbersFlag" name="numbersFlag">&nbsp;Numbers</label>
+            <label><input type="checkbox" id="symbolsFlag" name="symbolsFlag">&nbsp;Symbols</label>
+          </div>
 
-      <p><input readonly type="text" id="passwordResult"></p>
-      <input id="generatePasswordButton" type="button" value="Generate Password">
-      <input id="copyClipboardButton" type="button" value="Copy Password to Clipboard">
+          <p><input readonly type="text" id="passwordResult"></p>
+          <input id="generatePasswordButton" type="button" value="Generate Password">
+          <input id="copyClipboardButton" type="button" value="Copy Password to Clipboard">
 
-      <p id="confirmCopy"></p>
+          <p id="confirmCopy"></p>
+        </div>
+      </div>
     </div>
 
     <script src="js/passgen.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

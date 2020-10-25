@@ -10,13 +10,11 @@
     font-size: 1em;
     background-color: var(--background-color);
     color: var(--white);
+    margin-top: 1%;
 }
 
-.container {
-    width: 500px; 
-    margin: auto;
-    margin-top: 3%;
-    text-align: center;
+body {
+    background-color: var(--background-color) !important;
 }
   
 .slider {
@@ -30,11 +28,11 @@
 input[type="button"] {
   background-color: var(--white);
   color: var(--black);
-  margin: 0% 1%;
+  margin: 2% 1%;
 }
 
 label {
-    margin: 0% 3%;
+    margin-right: 3%;
 }
 
 #passwordResult {
@@ -42,6 +40,7 @@ label {
     font-size: .81em;
     background-color: var(--white);
     color: var(--black);
+    margin: 2% 0% 0% 0%;
 }
 
 #passwordResult:hover {
