@@ -6,6 +6,8 @@ var uppercaseFlag = false;
 var lowercaseFlag = true;
 var numbersFlag = false;
 var symbolsFlag = false;
+var successColor = "#00FF00";
+var errorColor = "#FF0000";
 
 var slider = document.getElementById("passwordLengthSlider");
 slider.value = defaultPassLength;
@@ -69,6 +71,10 @@ document.getElementById("copyClipboardButton").addEventListener("click", functio
 
         if (copySuccess && copyTextLength != 0) {
             document.getElementById("confirmCopy").innerHTML = "Password copied to clipboard."
+            document.getElementById("confirmCopy").style.color = successColor;
+        } else {
+            document.getElementById("confirmCopy").innerHTML = "Failed to copy password to clipboard.";
+            document.getElementById("confirmCopy").style.color = errorColor;
         }
         
         copyText.setSelectionRange(0,0);
