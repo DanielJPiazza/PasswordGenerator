@@ -70,10 +70,10 @@ document.getElementById("copyClipboardButton").addEventListener("click", functio
         var copySuccess = document.execCommand("copy")
 
         if (copySuccess && copyTextLength != 0) {
-            document.getElementById("confirmCopy").innerHTML = "Password copied to clipboard."
+            document.getElementById("confirmCopy").innerHTML = "Password copied to clipboard"
             document.getElementById("confirmCopy").style.color = successColor;
         } else {
-            document.getElementById("confirmCopy").innerHTML = "Failed to copy password to clipboard.";
+            document.getElementById("confirmCopy").innerHTML = "Failed to copy password to clipboard";
             document.getElementById("confirmCopy").style.color = errorColor;
         }
         
