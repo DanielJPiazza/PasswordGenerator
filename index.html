@@ -12,28 +12,19 @@
   </head>
 
   <body>
-    <div class="slidecontainer">
-      <p>Password Length: <span id="sliderVal"></span></p>
-      <input type="range" min="8" max="64" value="14" class="slider" id="passwordLengthSlider">
-    </div>
-
     <div class="container">
+      <p>Password Length: <span id="sliderVal"></span></p>
+      <p><input type="range" min="8" max="64" value="14" class="slider" id="passwordLengthSlider"></p>
+
       <label><input type="checkbox" id="lowercaseFlag" name="lowercaseFlag">Lowercase</label>
       <label><input type="checkbox" id="uppercaseFlag" name="uppercaseFlag">Uppercase</label>
       <label><input type="checkbox" id="numbersFlag" name="numbersFlag">Numbers</label>
       <label><input type="checkbox" id="symbolsFlag" name="symbolsFlag">Symbols</label>
-    </div>
-    
-    <div class="container">
+
+      <p><input readonly type="text" id="passwordResult"></p>
       <input id="generatePasswordButton" type="button" value="Generate Password">
       <input id="copyClipboardButton" type="button" value="Copy Password to Clipboard">
-    </div>
 
-    <div class="container">
-      <input readonly type="text" id="passwordResult">
-    </div>
-
-    <div class="container">
       <p id="confirmCopy"></p>
     </div>
 
